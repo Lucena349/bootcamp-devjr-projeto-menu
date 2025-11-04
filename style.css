@@ -1,0 +1,46 @@
+body{
+    background-color: #C3C2C0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container{
+    background-color: white;
+    width: 700px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card{
+    margin-bottom: 30px;
+    background-color: #F5F5F5;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.card-body{
+    background-color:burlywood;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.row{
+    justify-content: center;
+}
+
+input{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 15px auto;
+}
+
+button{
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
