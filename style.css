@@ -51,6 +51,7 @@ body{
 .botao-calcular{
     margin-bottom: 20px;
     margin-top: -20px;
+    background-color: #007AFF !important;
 }
 
 img{
