@@ -31,10 +31,16 @@
                         <strong>Bife com batata
                             <p>R$ 30,00</p>
                             <div class="btn-group" role="group" aria-label="Quantidade">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="minus">-</button>
-                                <input type="text" value="0" id="qtd" class="form-control form-control-sm text-center"
-                                    style="max-width: 40px;">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="plus">+</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-minus" id="minus">
+                                    -
+                                </button>
+
+                                <input type="text" value="0" id="1" class="form-control form-control-sm text-center value"
+                                    style="max-width: 40px;" name="quantity" readonly>
+                                    
+                                <button type="button" class="btn btn-outline-secondary btn-plus" id="plus">
+                                    +
+                                </button>
                             </div>
                         </strong>
 
@@ -47,10 +53,10 @@
                         <strong>Coxa de Frango Crocante
                             <p>R$ 25,00</p>
                             <div class="btn-group" role="group" aria-label="Quantidade">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="minus">-</button>
-                                <input type="text" value="0" id="qtd" class="form-control form-control-sm text-center"
-                                    style="max-width: 40px;">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="plus">+</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-minus" id="minus">-</button>
+                                <input type="text" value="0" id="2" class="form-control form-control-sm text-center value"
+                                    style="max-width: 40px;" name="quantity" readonly>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-plus" id="plus">+</button>
                             </div>
                         </strong>
                     </div>
@@ -62,10 +68,10 @@
                         <strong>Carne de Panela
                             <p>R$ 22,00</p>
                             <div class="btn-group" role="group" aria-label="Quantidade">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="minus">-</button>
-                                <input type="text" value="0" id="qtd" class="form-control form-control-sm text-center"
-                                    style="max-width: 40px;">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="plus">+</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-minus" id="minus">-</button>
+                                <input type="text" value="0" id="3" class="form-control form-control-sm text-center value"
+                                    style="max-width: 40px;" name="quantity" readonly>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-plus" id="plus">+</button>
                             </div>
                         </strong>
                     </div>
@@ -85,10 +91,10 @@
                         <strong>Farofa
                             <p>R$ 10,00</p>
                             <div class="btn-group" role="group" aria-label="Quantidade">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="minus">-</button>
-                                <input type="text" value="0" id="qtd" class="form-control form-control-sm text-center"
-                                    style="max-width: 40px;">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="plus">+</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-minus" id="minus">-</button>
+                                <input type="text" value="0" id="4" class="form-control form-control-sm text-center value"
+                                    style="max-width: 40px;" name="quantity" readonly>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-plus" id="plus">+</button>
                             </div>
                         </strong>
                     </div>
@@ -100,10 +106,10 @@
                         <strong>Salada
                             <p>R$ 8,00</p>
                             <div class="btn-group" role="group" aria-label="Quantidade">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="minus">-</button>
-                                <input type="text" value="0" id="qtd" class="form-control form-control-sm text-center"
-                                    style="max-width: 40px;">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="plus">+</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-minus" id="minus">-</button>
+                                <input type="text" value="0" id="5" class="form-control form-control-sm text-center value"
+                                    style="max-width: 40px;" name="quantity" readonly>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-plus" id="plus">+</button>
                             </div>
                         </strong>
                     </div>
@@ -115,10 +121,10 @@
                         <strong>Torresmo
                             <p>R$ 12,00</p>
                             <div class="btn-group" role="group" aria-label="Quantidade">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="minus">-</button>
-                                <input type="text" value="0" id="qtd" class="form-control form-control-sm text-center"
-                                    style="max-width: 40px;">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="plus">+</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-minus" id="minus">-</button>
+                                <input type="text" value="0" id="6" class="form-control form-control-sm text-center value"
+                                    style="max-width: 40px;" name="quantity" readonly>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-plus" id="plus">+</button>
                             </div>
                         </strong>
                     </div>
@@ -143,11 +149,16 @@
         </div>
 
         <div class="d-grid">
-            <button class="btn btn-primary botao-calcular" type="button">Calcular</button>
+            <button class="btn btn-primary botao-calcular" onclick="calc()" type="button">Calcular</button>
         </div>
-        <div id="output">
-        </div>
+
+        <div id="output"></div>
     </div>
+
+    
+
+    <script src="botoes.js"> </script>
+    
 </body>
 
 </html>
